@@ -6,11 +6,7 @@ import java.util.Optional;
 import javax.validation.Valid;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.springboot.exam.entities.Person;
 import com.springboot.exam.services.IPersonService;
@@ -18,7 +14,6 @@ import com.springboot.exam.services.IPersonService;
 import io.swagger.annotations.ApiOperation;
 
 @RestController
-@RequestMapping("/person")
 public class PersonController {
 	
 
@@ -32,7 +27,7 @@ public class PersonController {
 	}
 	
 	@ApiOperation(value = "Get Average")
-	@RequestMapping(value="/personAge")
+	@RequestMapping(value="/personAge", method = RequestMethod.GET)
 	public float getAllPersons() {
 		List<Person> personList = personService.findAll();
 		int ages = 0;
@@ -44,14 +39,14 @@ public class PersonController {
 	}
 	
 	@ApiOperation(value = "Get Persons List + Death List")
-	@RequestMapping(value="/personsList")
+	@RequestMapping(value="/personsList", method = RequestMethod.GET)
 	public List<Person> getAllPerson() {
 		List<Person> personList = personService.findAll();
 		return personList;
 	}
 	
 	@ApiOperation(value = "Get Person ID")
-	@RequestMapping(value="/person/{id}")
+	@RequestMapping(value="/person/{id}", method = RequestMethod.GET)
 	public Optional<Person> getPerson(@PathVariable (name="id") Long id) {
 		return personService.findOne(id);
 	}
