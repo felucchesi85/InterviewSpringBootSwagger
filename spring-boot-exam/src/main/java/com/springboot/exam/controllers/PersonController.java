@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import javax.validation.Valid;
 
+import com.springboot.exam.entities.KpiCliente;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
@@ -15,7 +16,7 @@ import io.swagger.annotations.ApiOperation;
 
 @RestController
 public class PersonController {
-	
+
 
 	@Autowired
 	private IPersonService personService;
@@ -37,6 +38,54 @@ public class PersonController {
 		
 		return (ages/personList.size());
 	}
+
+	@ApiOperation(value = "Get Average")
+	@RequestMapping(value="/personDeviation", method = RequestMethod.GET)
+	public double getStandardDeviation()
+	{
+		double sum = 0.0, standardDeviation = 0.0;
+		List<Person> personList = personService.findAll();
+		double edades = 0;
+		int length = personList.size();
+		for(Person person : personList) {  //suma todas las edades
+			edades+=person.getAge();
+		}
+
+		double media = edades/length;    //calcula la media de las edades
+		for(Person person: personList) {
+			standardDeviation += Math.pow(person.getAge() - media, 2);
+		}
+
+		return Math.sqrt(standardDeviation/length);
+
+	}
+
+
+	@ApiOperation(value = "Get Average")
+	@RequestMapping(value="/standardDeviation", method = RequestMethod.GET)
+	public KpiCliente getDeviationAndMedia ()
+	{
+		KpiCliente kpi = new KpiCliente();
+		double sum = 0.0, standardDeviation = 0.0;
+		List<Person> personList = personService.findAll();
+		double edades = 0;
+		int length = personList.size();
+		for(Person person : personList) {  //suma todas las edades
+			edades+=person.getAge();
+		}
+
+		double media = edades/length;    //calcula la media de las edades
+		kpi.setPromedio(media);
+
+
+		for(Person person: personList) {
+			standardDeviation += Math.pow(person.getAge() - media, 2);
+		}
+
+		kpi.setDesviacion(Math.sqrt(standardDeviation/length));
+		return kpi;
+
+	}
 	
 	@ApiOperation(value = "Get Persons List + Death List")
 	@RequestMapping(value="/personsList", method = RequestMethod.GET)
@@ -44,9 +93,22 @@ public class PersonController {
 		List<Person> personList = personService.findAll();
 		return personList;
 	}
+
+
+
+	@ApiOperation(value = "Get Persons List + Death List")
+	@RequestMapping(value="/personsList", method = RequestMethod.GET)
+	public List<Person> getAllPersonListAndProblablyDeath() {
+		List<Person> personList = personService.findAll();
+		return personList;
+
+
+
+
+	}
 	
 	@ApiOperation(value = "Get Person ID")
-	@RequestMapping(value="/person/{id}", method = RequestMethod.GET)
+		@RequestMapping(value="/person/{id}", method = RequestMethod.GET)
 	public Optional<Person> getPerson(@PathVariable (name="id") Long id) {
 		return personService.findOne(id);
 	}

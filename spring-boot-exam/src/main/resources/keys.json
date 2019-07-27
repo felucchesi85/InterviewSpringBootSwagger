@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "springbootrest-248023",
+  "private_key_id": "9a220ae061825d43eb0328dab5038bc508d233c5",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDMG17/J19NDjNR\nnfN2wzljwrNHmmQqkJRlau7hMJPj7XFXOso5+hPOLAZHcU2IHpomCGfPVwzay+LG\nPjknnrXpqdIya8MtmocrBDa1mStIIIVEB+ZzEymKXNWps9URPgvNnJGMYsIlm4f2\nYdbk8HBDJVOg8Bjl4+jtSWmFQcUL6Kg8P6K+zEMobtVeZ91ZCfIZuJDQQ4d6OozO\ne3j3LzjrhDsP+CAF9LeqkZ3g8apBd+nntMsmzRS2dOZqvZHWfPqtBhrNVXtqeZTV\nMqXBJULuuN2J7LmAGmG2o9G5h0MR0NOCPedFApJAPoY1Fc707x23lloy+pcHmv7x\nUCjR+RSfAgMBAAECggEADmA/KKmVRNAjPTRq2YqWmDg2eGyfcYANc7c8bBAH2p32\nxbYWWE8M5hCjwJRyaYv+P3+IEEqJVT/XES+AxxGern6Pl42Pib7Aln8Ne2z2Z3Yi\n7M/Bo4lN+7jeM72+3CAKpMjKV6D9G7kAspHhmO52ecQ/R66hkk+jMFNjY0dmoZf5\nP71R7Xb+G390oMKthcEANT1iXHPfD0trP/izmvpzAdXPyp2Gtrs0HBWsckupG63I\nFt+34WpPBwj2qMb5WuLdtlOMJx8A+f4sjLrYtzGL2fC4ZkkaQQVDyEc4xlwWAeXH\n9DeAocIxQIqTN9ei6YkURSeSu9Si4Xe9MuoZqZHBAQKBgQDyghy0kWmybCWBtp+8\noiXJd2tW+KsliRHkBeZDiib1Qu/pjRpCfZOLnFoypyMCocSQXq+41d634FaFG8u2\nCRZkQeCeUpjoSDfx/vpUAxoOsJiY+OMamBKmvGHLP/8C0ta6TJEavct/Nrja+d9U\nKh78w9wC2lc7NCIiXGpBGh25DwKBgQDXdlVqsf4YzismY36Stvkf26tOl83fU4Rb\n1wFETobSukfqjht2XTyiHMJCaNStbaCBpsGzwCwCQJnZcpHoHz8RQApI3YA6yZGU\nCNUT9WCqEQ+43UQn4koD4FuzMrfs8nRzKitrvL46X2H3aMDA0+inCiRisWhr50rL\nIZTnEi1LcQKBgQChF/uXm40aICseKsGb3h654WFlqdSPH6nJzn1y2kAc5rVWcQxD\npQWxVVC5mztvkSRxPuT+JNxJS3ZN//Pn3cuJGBXtNjMrAmZflCCYVGMn5PnJjHPY\ng7LIHhXcnYt6RbKsmRY/LFsVC7XqiNhpIX3qLPVm08HkqzINn1RaIM4j0wKBgQC8\ndEodunVPaPSg7SFGXjfkP5TEd06gaUI5ugLnpe+S3VANviITE1X3TUQ0JdDvqBVd\nkWeXOxzDE5H9eZJY/wuAoQzd0q9Xu/pTCq6keFkGJ0ojHZWBdRHb9h7+y/vHigGE\nwXudDkcsc0USy1Lc1fyGLf7JO/bjejgXF9ZPjbyEYQKBgA12cUdfGF7YDxujJHTZ\nOJG3ValFDcb7O8KvhUT9rY+IjqjPw+bJAVfaBrUhEl7sc3aI0iocgj2GGkHQKXEw\n1hb4z+Dnsii8sJVflnTPMFvEAiXTK+iCPdLBCiZnx3X6miDEQO4MdY0/FdRW/rpw\nI1wRmIpCzKQamMoiePLI4K/Q\n-----END PRIVATE KEY-----\n",
+  "client_email": "springbootrest-248023@appspot.gserviceaccount.com",
+  "client_id": "101339662463879391751",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/springbootrest-248023%40appspot.gserviceaccount.com"
+}
