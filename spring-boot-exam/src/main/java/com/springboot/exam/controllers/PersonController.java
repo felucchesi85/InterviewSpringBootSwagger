@@ -94,7 +94,7 @@ public class PersonController {
 		return personList;
 	}
 
-		
+
 	@ApiOperation(value = "Get Person ID")
 		@RequestMapping(value="/person/{id}", method = RequestMethod.GET)
 	public Optional<Person> getPerson(@PathVariable (name="id") Long id) {
