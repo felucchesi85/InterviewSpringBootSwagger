@@ -94,19 +94,7 @@ public class PersonController {
 		return personList;
 	}
 
-
-
-	@ApiOperation(value = "Get Persons List + Death List")
-	@RequestMapping(value="/personsList", method = RequestMethod.GET)
-	public List<Person> getAllPersonListAndProblablyDeath() {
-		List<Person> personList = personService.findAll();
-		return personList;
-
-
-
-
-	}
-	
+		
 	@ApiOperation(value = "Get Person ID")
 		@RequestMapping(value="/person/{id}", method = RequestMethod.GET)
 	public Optional<Person> getPerson(@PathVariable (name="id") Long id) {
