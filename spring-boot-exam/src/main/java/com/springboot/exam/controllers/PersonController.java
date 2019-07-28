@@ -22,7 +22,7 @@ public class PersonController {
 	private IPersonService personService;
 	
 	@ApiOperation(value = "Save Person")
-	@PostMapping(value="/person", consumes = "application/json")
+	@PostMapping(consumes = "application/json")
 	public void savePerson(@RequestBody Person person) {
 		personService.save(person);
 	}
@@ -40,7 +40,7 @@ public class PersonController {
 	}
 
 	@ApiOperation(value = "Get Average")
-	@RequestMapping(value="/personDeviation", method = RequestMethod.GET)
+		@RequestMapping(value="/personDeviation", method = RequestMethod.GET)
 	public double getStandardDeviation()
 	{
 		double sum = 0.0, standardDeviation = 0.0;
