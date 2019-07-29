@@ -5,7 +5,7 @@
 
     <groupId>com.exam</groupId>
     <artifactId>spring-boot-exam</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>2.1.4.RELEASE</version>
     <name>spring-boot-exam</name>
     <description>Demo project</description>
     <parent>
