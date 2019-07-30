@@ -1,0 +1,10 @@
+com\springboot\exam\dao\IPersonDao.class
+com\springboot\exam\demo\config\CORSConfig$1.class
+com\springboot\exam\entities\KpiCliente.class
+com\springboot\exam\services\IPersonService.class
+com\springboot\exam\SpringBootExamApplication.class
+com\springboot\exam\demo\config\CORSConfig.class
+com\springboot\exam\services\PersonServiceImpl.class
+com\springboot\exam\controllers\PersonController.class
+com\springboot\exam\entities\Person.class
+com\springboot\exam\swagger\config\SwaggerConfig.class
